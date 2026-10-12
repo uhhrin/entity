@@ -1,0 +1,45 @@
+# ================================
+# Entity Plugin Configuration
+# ================================
+
+haunt:
+  enabled: true
+  auto-start-on-join: true
+  first-haunt-delay: 120
+  min-interval: 60
+  max-interval: 600
+
+entity:
+  damage: 2.0
+  flash-duration: 15
+  spawn-distance: 4.0
+  no-loot-on-death: true
+  skin:
+    value: "ewogICJ0aW1lc3RhbXAiIDogMTc3MDk4MDM2NTA1OSwKICAicHJvZmlsZUlkIiA6ICI2OTU3YjQyOTZiOTI0NGJkOGQzNWJiZGU4M2JiZDI3OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJjb2xpblBBUEEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmRmMTNhMjVkOWRmYTk5YWYyMTE0ZjQxN2M2MTQ5MzE4MjJhNTg4MTFiZWViZWZhMmJlNzk2MDIwNWUzMWIxNyIKICAgIH0KICB9Cn0="          # Base64 texture value for Herobrine skin (derived from provided URL)
+    signature: "tO/tYhgbZoLxCDl5MEvsliAU9FZUav73TBs5lcogKDaIOCfuWY3AAciCx25MnLBMl7u0Li5INamYpJeBq/qSJWktFMeIblMfftrTigQfuCM4dWH8M/JOU973LZoM8UZIq5tMlMOjZGlZpUdf1hTBiOLEYY/ujpwTFvj24lKupoPtHtIufo8Esm33FqYU2bo3zMt2fXqFXWLAMHrPVyXgZUZ2OOxltAEXoHvSZkbcv443uP3F+hj/Q3BvU2FzBmKEGnFx7Z0ZOSbJk90XGgYKye0z3WEvOzrbC3cYq0/ggOrlzZR8IYypL/KYKGDwZ8bkZIbgNzj/5iA2add50Qq3VxChwG5Yo/BI4wymQKlVxTXaejZbnxHVelNR/XnNSAB6o7lqdtchlKytA09/aTaXn1wkKyEWCP5WPdF560HOzDiCvGe00DwlNH4NabSA7xzXIGhUKC/O3aB8C2UNOIdW4ooDbCFApvJ07Uv62uAI8p+X91T6GEpoHKZ3QeD34cy+W2Gvws9nEzZWYW5z/iqRQZFp838uVEAdyqq5RFMl0C+sHsL1BgW+TSW0IQyny1Hasq3Hp2Nigorww0cEB9QXisDaHXlr4t/UFuqwbCsSQZPT9OSAC1N8/BPIHRMcGaWZatqIWeWdpz5RioftNehO7RvaYyv/DYxubFucEVKDQ80="      # Optional Mojang signature for the texture
+
+messages:
+  haunt-title: "&4&lI am watching you"
+  haunt-subtitle: ""
+  forced-haunt: "&6Haunt forced on %player%"
+  haunt-stopped: "&aHaunting stopped for %player%"
+  haunt-started: "&aHaunting resumed for %player%"
+
+sounds:
+  enabled: true
+  ambient: "ENTITY_WITHER_AMBIENT"
+  attack: "ENTITY_PLAYER_HURT"
+  disappear: "ENTITY_ENDERMAN_TELEPORT"
+  appear: "BLOCK_PORTAL_TRIGGER"
+  curse: "ENTITY_ELDER_GUARDIAN_CURSE"
+  volume: 1.0
+  pitch: 0.8
+
+particles:
+  enabled: true
+  spawn:
+    type: "SMOKE_NORMAL"
+    count: 20
+  despawn:
+    type: "LARGE_SMOKE"
+    count: 15

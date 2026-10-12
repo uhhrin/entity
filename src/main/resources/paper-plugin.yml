@@ -1,0 +1,28 @@
+name: entity
+version: '${version}'
+main: org.thatnubarin.entity.Entity
+api-version: '1.21'
+author: thatnubarin
+description: Haunting entity system
+commands:
+  entity:
+    description: Entity plugin commands
+    usage: /entity [force|stop|start|status|reload|toggle] [player]
+    permission: entity.admin
+    aliases: [ent, herobrine]
+permissions:
+  entity.force:
+    description: Force haunt on players
+    default: op
+  entity.admin:
+    description: Admin commands
+    default: op
+  entity.bypass:
+    description: Immune to haunting
+    default: false
+  entity.*:
+    description: All permissions
+    default: op
+    children:
+      entity.force: true
+      entity.admin: true
